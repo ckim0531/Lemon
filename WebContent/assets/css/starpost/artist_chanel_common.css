@@ -1,0 +1,1532 @@
+@CHARSET "UTF-8";
+
+/*------------------------------------*/
+/*               본문 영역                             */
+/*------------------------------------*/
+#cont_wrap {
+	min-height: 100%;
+	margin: 0 auto;
+	background: none;
+}
+
+#conts_section {
+	position: relative;
+	width: 1008px;
+	margin: 0 auto;
+	/* padding: 0 228px 0 20px; */
+}
+
+/* #conts_section.my_fold, #conts_section.fold_off {
+	padding: 0 228px 0 20px;
+} */
+
+/*------------------------------------*/
+/*                본문                                 */
+/*------------------------------------*/
+/* #conts {
+	position: relative;
+	z-index: 10;
+	display: inline-block;
+	display: block;
+	width: 1008px;
+	min-height: 800px;
+	padding: 52px 0 88px;
+	zoom: 1;
+} */
+
+/*------------------------------------*/
+/*                 제목                                */
+/*------------------------------------*/
+.f_tit {
+	/* margin: 25px 0 12px; */
+	color: #1a1a1a;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	font-family: "맑은 고딕", "Malgun Gothic", "돋움", Dotum, "Apple Gothic",
+		sans-serif;
+	letter-spacing: -2px;
+}
+
+h2.f_tit {
+	margin: 25px 0 12px;
+}
+
+#conts h2 {
+	margin-top: 0 !important;
+}
+
+/*------------------------------------*/
+/*             아티스트 정보 영역                      */
+/*------------------------------------*/
+.wrap_dtl_atist {
+	border: 1px solid #bbbbbb;
+	border-top: 2px solid #808080;
+	height: 250px;
+}
+
+.wrap_dtl_atist .dtl_atist {
+	position: relative;
+	padding: 24px 23px;
+	background-color: #fff;
+}
+
+.none {
+	position: absolute;
+	top: -5000em;
+	left: 0;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+}
+
+/*------------------------------------*/
+/*              프로필 이미지                           */
+/*------------------------------------*/
+.wrap_dtl_atist .wrap_thumb {
+	float: left;
+	position: relative;
+	width: 208px;
+}
+
+.dtl_atist .wrap_thumb .thumb {
+	display: block;
+	position: relative;
+	width: 208px;
+	height: 208px;
+}
+
+.dtl_atist .wrap_thumb .thumb_frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 208px;
+	height: 208px;
+	background-image:
+		url("../../../assets/img/artistChanel/artistChanel_bg_atist_frame.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+/*------------------------------------*/
+/*             아티스트 정보                            */
+/*------------------------------------*/
+.wrap_dtl_atist .wrap_atist_info {
+	float: left;
+	width: 440px;
+	margin-left: 22px;
+}
+
+/* 가수 이름 */
+.dtl_atist .wrap_atist_info .title_atist {
+	margin-top: -2px;
+	color: #000;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	font-family: "맑은 고딕", "Malgun Gothic", "Apple Gothic", sans-serif;
+	letter-spacing: -1px;
+	word-break: break-all;
+}
+
+/* 가수 본명 */
+.dtl_atist .wrap_atist_info .title_atist .realname {
+	font-size: 16px;
+}
+
+/* 가수 정보 영역 */
+.dtl_atist dl.atist_info {
+	margin-top: 19px;
+}
+
+/* 가수 정보 주제 */
+.dtl_atist .wrap_atist_info dt {
+	clear: left;
+	float: left;
+	width: 70px;
+	padding-left: 2px;
+	color: #666;
+	font-size: 12px;
+	line-height: 20px;
+	font-family: Dotum, "Apple Gothic", sans-serif;
+}
+
+/* 가수 정보 내용 */
+.dtl_atist .wrap_atist_info dd {
+	float: left;
+	width: 368px;
+	color: #1a1a1a;
+	font-size: 12px;
+	line-height: 20px;
+	font-family: Dotum, "Apple Gothic", sans-serif;
+}
+
+.dtl_atist .wrap_atist_info dd .gubun {
+	display: inline-block;
+}
+
+/* 데뷔 앨범 노래 듣기 */
+.btn_play_song {
+	display: inline-block;
+	overflow: hidden;
+	width: auto;
+	max-width: 100%;
+	margin: 0;
+	height: 17px;
+	text-decoration: none !important;
+	cursor: pointer;
+	*cursor: pointer;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+	text-align: left;
+}
+
+.dtl_atist .wrap_atist_info dd .btn_play_song {
+	height: 18px;
+	margin-left: 12px;
+	max-width: 290px;
+	vertical-align: top;
+}
+
+.btn_play_song span.icon_play {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: 0;
+	background-image:
+		url("../../../assets/img/artistChanel/artistChanel_btn_play_song.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	line-height: 0;
+	text-indent: -9999px;
+	*text-indent: 0;
+	*font-size: 0px;
+	*line-height: 0;
+	vertical-align: top;
+}
+
+a.btn_play_song:hover span.icon_play {
+	background-position: -18px 0;
+	text-decoration: none;
+}
+
+.btn_play_song span.songname12 {
+	color: #1a1a1a;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: "Dotum", "Apple Gothic", sans-serif;
+	vertical-align: top;
+	text-align: left;
+}
+
+.dtl_atist .wrap_atist_info dd a.btn_play_song .songname12 {
+	max-width: 200px;
+}
+
+.dtl_atist .wrap_atist_info dd {
+	float: left;
+	width: 368px;
+	color: #1a1a1a;
+	font-size: 12px;
+	line-height: 20px;
+	font-family: Dotum, "Apple Gothic", sans-serif;
+}
+
+.dtl_atist .wrap_atist_info dd.awarded .ellipsis {
+	float: left;
+	display: inline-block;
+	max-width: 315px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.dtl_atist .wrap_atist_info dd .bar {
+	margin: 0 5px;
+	color: #ccc;
+}
+
+/* 더보기 */
+.btn_text {
+	cursor: pointer;
+}
+
+.dtl_atist .wrap_atist_info dd.awarded .btn_text {
+	display: inline-block;
+	margin-left: 10px;
+	*margin-left: 2px;
+	vertical-align: top;
+	*vertical-align: middle;
+}
+
+.btn_text .text {
+	display: inline;
+	color: #666;
+	font-size: 11px;
+	line-height: 1.2em;
+	letter-spacing: -1px;
+	font-family: "Dotum", "돋음", "Apple Gothic", sans-serif;
+}
+
+.btn_text .icon {
+	display: inline-block;
+	background-image:
+		url("../../../assets/img/artistChanel/artistChanel_bg_btn_icon.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	vertical-align: middle;
+}
+
+.btn_text.arrow_r .icon {
+	width: 4px;
+	height: 7px;
+	background-position: -136px -57px;
+	line-height: 7px;
+	vertical-align: 1px;
+}
+
+/*------------------------------------*/
+/*             관리자 모드                              */
+/*------------------------------------*/
+/* 관리자 영역 */
+.wrap_dtl_atist .wrap_intst {
+	float: left;
+	position: relative;
+	width: 240px;
+	min-height: 208px;
+	margin-left: 25px;
+	padding-left: 24px;
+	border-left: 1px solid #e6e6e6;
+	*z-index: 5;
+}
+
+/*------------------------------------*/
+/*                탭                                     */
+/*------------------------------------*/
+/* 탭 영역 */
+.wrap_tab_atist ul {
+	position: relative;
+	width: 1008px;
+	margin-top: 15px;
+	border-top: 2px solid #838383;
+	border-bottom: 1px solid #dbdbdb;
+	background: #eaefeb;
+}
+
+/* 탭 메뉴 */
+.wrap_tab_atist ul li {
+	float: left;
+	width: 110px;
+	border-right: 1px solid #dbdbdb;
+	border-left: 1px solid #ffffff;
+	height: 34px;
+}
+
+.wrap_tab_atist ul li.first_child {
+	border-left: 0;
+}
+
+.wrap_tab_atist ul li a {
+	display: block;
+	position: relative;
+	padding: 10px 0 7px 0px;
+	color: #1b1b1b;
+	text-align: center;
+}
+
+.wrap_tab_atist ul li.on a {
+	z-index: 3;
+	border-bottom: 1px solid #fff;
+	background-color: #fff;
+	color: #1a1a1a;
+	font-weight: bold;
+	height: 17px;
+	color: #EDAE06;
+}
+
+.wrap_tab_atist .icon_timeline {
+	display: block;
+	position: absolute;
+	top: 9px;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	margin-left: -10px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.wrap_tab_atist ul li.last_child {
+	width: 112px;
+	border-right: 0;
+}
+
+.wrap_tab_atist ul:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+/*------------------------------------*/
+/*               폰트 색상                           */
+/*------------------------------------*/
+.fc_gray {
+	color: #333 !important;
+}
+
+.fc_mgray {
+	color: #777 !important;
+}
+
+/*------------------------------------*/
+/*            라디오 버튼 영역                         */
+/*------------------------------------*/
+.sort_info {
+	padding: 24px 0 9px;
+}
+
+.sort_info .fl_left {
+	color: #1a1a1a;
+}
+
+.sort_info .wrap_sort {
+	margin-top: 3px;
+}
+
+.wrap_sort .ico_radio {
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.ico_radio .icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 4px;
+	background-image:
+		url("../../../assets/img/artistChanel/artistchanel_bg_radio.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	vertical-align: middle;
+}
+
+.ico_radio.on .icon {
+	background-position: -20px 0;
+}
+
+.ico_radio .text {
+	color: #666;
+	vertical-align: middle;
+}
+
+.ico_radio.on .text {
+	color: #1a1a1a;
+}
+
+.ico_radio.on .text span {
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+/*------------------------------------*/
+/*               정렬 영역                            */
+/*------------------------------------*/
+.sort_info .list_sort {
+	margin-top: 4px;
+}
+
+.list_sort li {
+	float: left;
+	margin-left: 4px;
+	padding: 0 4px 0 9px;
+	background-image:
+		url("../../../assets/img/artistChanel/artistchanel_bg_gray_bar.png");
+	background-repeat: no-repeat;
+	background-position: 0 3px;
+}
+
+.list_sort li.first_child {
+	margin-left: 8px;
+	background: 0;
+}
+
+.list_sort li a {
+	color: #666;
+}
+
+.list_sort li.on a {
+	color: #1a1a1a;
+	font-weight: bold;
+}
+
+/*------------------------------------*/
+/*              페이지 영역                            */
+/*------------------------------------*/
+.paginate {
+	margin-top: 24px;
+	text-align: center;
+}
+
+.paginate a {
+	display: inline-block;
+	position: relative;
+	width: 24px;
+	height: 24px;
+	background-image:
+		url("../../../assets/img/artistChanel/artist_chanel_btn_paginate.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	vertical-align: middle;
+}
+
+.paginate .btn_first {
+	background-position: 0 0;
+	margin-right: -2px;
+}
+
+.paginate .btn_first.disabled {
+	background-position: 0 -108px;
+	margin-right: -2px;
+}
+
+.paginate a span {
+	border: none;
+	font-size: 0;
+	line-height: 0;
+}
+
+.paginate .btn_pre {
+	background-position: -26px 0;
+}
+
+.paginate .btn_pre.disabled {
+	background-position: -26px -108px;
+}
+
+.paginate .page_num {
+	display: inline-block;
+	margin: 0 0 0 2px;
+	*margin: -1px 5px 0 1px;
+	color: #666;
+	font-size: 12px;
+	line-height: 1.2em;
+	font-family: "돋움", "dotum", sans-serif, "Apple Gothic", sans-serif;
+	vertical-align: middle;
+}
+
+.paginate .page_num strong {
+	position: relative;
+	display: inline-block;
+	padding: 5px 6px 3px;
+	border: 1px solid #EDAE06;
+	background-color: #fff;
+	font-weight: bold;
+	min-width: 10px;
+	margin-left: -1px;
+	color: #EDAE06;
+	vertical-align: middle;
+	text-decoration: none;
+	z-index: 2;
+}
+
+.paginate .page_num a {
+	position: relative;
+	height: auto;
+	margin-left: -1px;
+	color: #666;
+	text-indent: 0;
+	background-image:
+		url("../../../assets/img/artistChanel/artist_chanel_btn_paginate.png");
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	display: inline-block;
+	padding: 5px 7px 3px;
+	width: auto;
+	height: auto;
+	min-width: 18px;
+	font-weight: bold;
+}
+
+.paginate .btn_next {
+	background-position: -84px 0;
+}
+
+.paginate .btn_next.disabled {
+	background-position: -84px -108px;
+}
+
+.paginate .btn_last {
+	background-position: -110px 0;
+	margin-left: -2px;
+}
+
+/*---------------------------------------------*/
+/*　　　　　　　　　　　　　　　댓글　　　　　　　　　　　　　　*/
+/*---------------------------------------------*/
+/* 댓글 영역 */
+#d_cmtpgn div, #d_cmtpgn a, #d_cmtpgn img, #d_cmtpgn span, #d_cmtpgn p,
+	#d_cmtpgn h1, #d_cmtpgn ul, #d_cmtpgn li, #d_cmtpgn h3, #d_cmtpgn form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* 댓글 적는 영역 */
+#d_cmtpgn .re_notice {
+    display: block;
+    position: relative;
+    margin-bottom: 24px;
+    padding: 15px 101px 8px 28px;
+    background-color: #f5f5f5;
+    border: 1px solid #d1d1d1;
+    z-index: 40;
+    zoom: 1;
+}
+
+/* 프로필 사진 */
+#d_cmtpgn .re_notice .thumb_wrap {
+    position: relative;
+    float: left;
+    margin-top: 13px;
+}
+
+#d_cmtpgn a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+#d_cmtpgn .re_notice .thumb_wrap .thumb {
+    display: block;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+}
+
+#d_cmtpgn img {
+    border: 0;
+    line-height: 0;
+    font-size: 0;
+}
+
+#d_cmtpgn a img {
+    border: 0;
+}
+
+#d_cmtpgn .re_notice .thumb_wrap .thumb .thumb_frame {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 54px;
+    height: 54px;
+    background-image: url("../../../assets/img/artistChanel/artist_chanel_bg_frame_54.png");
+    background-repeat: no-repeat;
+}
+
+/* 적는 영역 */
+#d_cmtpgn .re_notice .re_textarea_wrap {
+    float: right;
+    width: 804px;
+}
+
+#d_cmtpgn .textarea {
+    position: relative;
+    padding-bottom: 19px;
+    border: 1px solid #d1d1d1;
+    background-color: #fff;
+    color: #666;
+    font-family: "Dotum","돋음","Apple Gothic",sans-serif;
+}
+
+#d_cmtpgn .textarea .ancm {
+    padding: 6px 32px 0;
+    color: #b2b2b2;
+}
+
+/* 게시물의 저작권 등 분쟁, 개인정보 노출로 인한 책임은
+	작성자 또는 게시자에게 있음을 유의해 주세요. */
+#d_cmtpgn .textarea .ancm p {
+    padding-left: 11px;
+    text-indent: -11px;
+}
+
+#d_cmtpgn .re_notice .textarea .scroll {
+    overflow: hidden;
+    position: relative;
+    overflow-y: auto;
+    padding: 6px 7px 4px;
+}
+
+/* 글자 수 */
+#d_cmtpgn .num_board {
+    font-size: 12px;
+    color: #999;
+}
+
+#d_cmtpgn .textarea .num_board {
+    width: 100%;
+    display: block;
+    text-align: right;
+}
+
+#d_cmtpgn .textarea .num_board {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: auto;
+}
+
+#d_cmtpgn .none {
+    position: absolute;
+    top: -5000em;
+    left: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    font-size: 12px;
+    text-indent: -9999px;
+}
+
+#d_cmtpgn .num_board strong {
+    color: #666;
+}
+
+/* 댓글  모든 버튼 영역 */
+#d_cmtpgn button, #d_cmtpgn .btn {
+    border: 1px solid red;
+    display: inline-block;
+    zoom: 1;
+    margin: 0;
+    padding: 0;
+    background: 0;
+    border: 0;
+    text-decoration: none !important;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#d_cmtpgn button span.odd_span, #d_cmtpgn .btn span.odd_span, #d_cmtpgn button span.even_span, #d_cmtpgn .btn span.even_span {
+    display: block;
+    position: relative;
+}
+
+/* 내용 적는 곳 밑에 아이콘 영역 */
+#d_cmtpgn .re_notice .wrap_btn {
+    margin-top: 8px;
+}
+
+#d_cmtpgn .wrap_btn_atach_cmt {
+    display: inline-block;
+    clear: both;
+    line-height: 28px;
+    vertical-align: middle;
+}
+
+#d_cmtpgn .re_notice .wrap_btn .wrap_btn_atach_cmt {
+    float: left;
+    clear: none;
+}
+
+#d_cmtpgn .wrap_btn_atach_cmt .wrap_btn_attach {
+    position: relative;
+    float: left;
+    margin-left: -1px;
+    font-size: 0;
+    line-height: 0;
+}
+
+#d_cmtpgn .btn_atach_cmt {
+    position: relative;
+}
+
+#d_cmtpgn .btn_atach_cmt .odd_span {
+    width: 31px;
+    height: 28px;
+    background-image: url("../../../assets/img/artistChanel/artist_chanel_bg_btn_atach.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    overflow: hidden;
+    line-height: 28px;
+    text-indent: -999px;
+}
+
+/* 음악 첨부 */
+#d_cmtpgn .re_notice .wrap_btn .wrap_btn_atach_cmt .wrap_btn_attach.first_child {
+    margin: 0;
+}
+
+#d_cmtpgn .btn_atach_cmt.sound .odd_span {
+    background-position: left top;
+}
+
+/* 음악 첨부 팝업 */
+
+/* 음악 첨부 팝업 닫기 */
+
+/* 사진 첨부 */
+#d_cmtpgn .btn_atach_cmt.photo .odd_span {
+    background-position: -40px top;
+}
+
+/* 사진 첨부 팝업 */
+
+/* 사진 첨부 팝업 닫기 */
+
+/* 영상 첨부 */
+#d_cmtpgn .btn_atach_cmt.video .odd_span {
+    background-position: -80px top;
+}
+
+/* 영상 첨부 팝업 */
+
+/* 영상 첨부 팝업 닫기 */
+
+/* 링크 첨부 */
+#d_cmtpgn .btn_atach_cmt.link .odd_span {
+    background-position: -120px top;
+}
+
+/* 링크 첨부 팝업 */
+
+/* 링크 첨부 팝업 닫기 */
+
+/* 등록 버튼 */
+#d_cmtpgn .re_notice .wrap_btn02 {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+#d_cmtpgn .btn_reg .odd_span, #d_cmtpgn .btn_reg .even_span {
+    background-image: url("../../../assets/img/artistChanel/artist_chanel_bg_btn_reg.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#d_cmtpgn .btn_reg .odd_span {
+    padding-left: 8px;
+    background-position: left top;
+}
+
+#d_cmtpgn .btn_reg .even_span {
+    min-width: 64px;
+    height: 80px;
+    padding-right: 8px;
+    background-position: right top;
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 84px;
+    font-family: "Dotum","돋음","Apple Gothic",sans-serif;
+}
+
+/* 댓글 개수 / 최신순 / 추천순 / 답글순 영역 */
+#d_cmtpgn .clfix {
+    display: block;
+}
+
+#d_cmtpgn .clfix {
+    zoom: 1;
+}
+
+#d_cmtpgn .mb8 {
+    margin-bottom: 8px !important;
+}
+
+/* 댓글 개수 */
+#d_cmtpgn .fl_left {
+    float: left;
+}
+
+#d_cmtpgn .fc_strong {
+    color: #1a1a1a !important;
+}
+
+#d_cmtpgn .fc_point {
+    color: #EDAE06 !important;
+}
+
+/* 최신순 / 추천순 / 답글순  */
+#d_cmtpgn ol, #d_cmtpgn ul, #d_cmtpgn li {
+    list-style: none;
+    font-weight: normal;
+}
+
+#d_cmtpgn .fl_right {
+    float: right;
+}
+
+/* 최신순 / 추천순 / 답글순 / 댓글 영역 */
+#d_cmtpgn ol, #d_cmtpgn ul, #d_cmtpgn li {
+    list-style: none;
+    font-weight: normal;
+}
+
+#d_cmtpgn .list_sort li {
+    float: left;
+    margin-left: 4px;
+    padding: 0 4px 0 9px;
+    background-image: url("../../../assets/img/artistChanel/artist_chanel_bg_gray_bar.png");
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+}
+
+#d_cmtpgn a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+#d_cmtpgn a:link {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+#d_cmtpgn a:visited {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+#d_cmtpgn .list_sort li a {
+    color: #666;
+}
+
+/* 최신순 */
+#d_cmtpgn .list_sort li.first_child {
+    margin-left: 8px;
+    background: 0;
+}
+
+/* 현재 보는 것 */
+#d_cmtpgn .list_sort li.on strong {
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+/* 댓글 영역 */
+#d_cmtpgn .list_cmt {
+    position: relative;
+    z-index: 20;
+    border: 1px solid #ccc;
+    border-right: 0;
+    border-left: 0;
+}
+
+#d_cmtpgn .list_cmt .search_loading {
+    padding: 68px 0 63px;
+    text-align: center;
+}
+
+#d_cmtpgn .list_cmt .search_loading p {
+    color: #1a1a1a;
+}
+
+#d_cmtpgn ol, #d_cmtpgn ul, #d_cmtpgn li {
+    list-style: none;
+    font-weight: normal;
+}
+
+#d_cmtpgn .list_cmt ul li.first_child {
+    border-top: 0;
+}
+
+#d_cmtpgn .wrap_cmt_cntt {
+    display: block;
+    position: relative;
+    padding: 15px 0 7px;
+    padding-left: 235px;
+}
+
+/* 댓글 - 작성자 프로필 사진 */
+#d_cmtpgn .wrap_cmt_cntt .wrap_nicnmname {
+    overflow: hidden;
+    float: left;
+    width: 196px;
+    margin-left: -235px;
+    padding: 0 15px 0 24px;
+}
+
+#d_cmtpgn .list_cmt .none {
+    font-size: 12px;
+    text-indent: -9999px;
+}
+
+#d_cmtpgn .wrap_cmt_cntt .wrap_nicnmname .thumb_wrap {
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding-right: 23px;
+}
+
+#d_cmtpgn .wrap_cmt_cntt .wrap_nicnmname .thumb_wrap .thumb {
+    display: block;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+}
+
+#d_cmtpgn .wrap_cmt_cntt .wrap_nicnmname .thumb_wrap .thumb .thumb_frame {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 54px;
+    height: 54px;
+    background-image: url("../../../assets/img/artistChanel/artist_chanel_bg_frame02_54.png");
+    background-repeat: no-repeat;
+}
+
+/* 작성자 닉네임 */
+#d_cmtpgn .list_cmt .ellipsis {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#d_cmtpgn .wrap_cmt_cntt .wrap_nicnmname .ellipsis a {
+    color: #999;
+}
+
+/* 모바일 작성시 */
+#d_cmtpgn .icon_reg_mobile {
+    display: inline-block;
+    width: 7px;
+    height: 11px;
+    background-image: url("../../../assets/img/artistChanel/artist_chanel_bg_sprite_cmt.png");
+    background-repeat: no-repeat;
+    background-position: -91px 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+#d_cmtpgn .wrap_cmt_cntt .wrap_nicnmname .icon_reg_mobile {
+    vertical-align: -1px;
+}
+
+/* 댓글 내용 */
+#d_cmtpgn .wrap_cmt_cntt .wrap_cntt {
+    padding-right: 0;
+}
+
+#d_cmtpgn .wrap_cmt_cntt .wrap_cntt .cntt {
+    word-break: break-all;
+    color: #555;
+}
+
+#d_cmtpgn .wrap_cmt_cntt .wrap_cntt .cntt .cmt_text .cmt_cont {
+    padding-right: 24px;
+}
+
+/* 댓글 작성 일자 / 시간 */
+#d_cmtpgn .list_cmt .date {
+    font-size: 11px;
+    color: #999;
+}
+
+#d_cmtpgn .list_cmt .time {
+    margin-left: 3px;
+}
+
+/* 댓글 답글 */
+#d_cmtpgn .wrap_cmt_cntt .wrap_cntt .wrap_btn {
+    overflow: hidden;
+    margin-top: 3px;
+    padding-right: 16px;
+}
+
+#d_cmtpgn .btn_text {
+    cursor: pointer;
+}
+
+#d_cmtpgn .wrap_cmt_cntt .wrap_cntt .wrap_btn .btn_text.arrow_d02, #d_cmtpgn .wrap_cmt_cntt .wrap_cntt .wrap_btn .btn_text.arrow_u02 {
+    float: left;
+    margin-top: 6px;
+}
+
+#d_cmtpgn .btn_text .text {
+    display: inline;
+    color: #666;
+    font-size: 11px;
+    line-height: 1.2em;
+    letter-spacing: -1px;
+    font-family: "Dotum","돋음","Apple Gothic",sans-serif;
+}
+
+#d_cmtpgn .btn_text.arrow_u02 .text, #d_cmtpgn .btn_text.arrow_d02 .text {
+    font-size: 12px;
+    line-height: 1.4em;
+    color: #555;
+}
+
+#d_cmtpgn .list_cmt .btn_text .text {
+    font-size: 12px;
+}
+
+#d_cmtpgn .btn_text.arrow_u02 .icon, #d_cmtpgn .btn_text.arrow_d02 .icon {
+    width: 5px;
+    height: 3px;
+    display: inline-block;
+    background-origin: url("../../../assets/img/artistChanel/artist_chanel_bg_btn_icon.png");
+    background-repeat: no-repeat;
+    background-position: -291px top;
+    vertical-align: 3px;
+}
+
+#d_cmtpgn .btn_text.arrow_u02 .icon {
+    background-position: -291px -13px;
+}
+
+/* 좋아요 / 싫어요 / 신고 */
+#d_cmtpgn .wrap_cmt_cntt .wrap_cntt .wrap_btn .wrap_btn_right {
+    float: right;
+}
+
+/* 좋아요 / 싫어요 */
+#d_cmtpgn .wrap_cmt_cntt .wrap_cntt .wrap_btn .wrap_btn_recm {
+    display: inline-block;
+    padding-right: 9px;
+    vertical-align: top;
+}
+
+#d_cmtpgn .btn_recm {
+    height: 27px;
+    vertical-align: middle;
+}
+
+#d_cmtpgn .btn_recm .odd_span {
+    position: relative;
+    height: 27px;
+    padding-left: 32px;
+    color: #666;
+    font-size: 12px;
+    line-height: 27px;
+    font-family: "Dotum","돋음","Apple Gothic",sans-serif;
+    text-decoration: none;
+}
+
+#d_cmtpgn .wrap_btn_recm .btn_recm span.odd_span {
+    color: #999;
+}
+
+#d_cmtpgn .btn_recm .icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 27px;
+    height: 27px;
+    background-image: url("../../../assets/img/artistChanel/artist_chanel_bg_cmt_recm.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+/* 좋아요 */
+#d_cmtpgn .wrap_btn_recm .btn_recm.positive {
+    margin-left: 0;
+}
+
+#d_cmtpgn .btn_recm.positive .icon {
+    background-position: 0 0;
+}
+
+/* 싫어요 */
+#d_cmtpgn .btn_recm.negative .icon {
+    background-position: -27px 0;
+}
+
+/* 신고 */
+#d_cmtpgn .wrap_cmt_cntt .wrap_btn_report {
+    display: inline-block;
+    position: static;
+    right: 16px;
+    bottom: 7px;
+    vertical-align: top;
+}
+
+#d_cmtpgn .wrap_cmt_cntt .wrap_btn_report {
+    top: auto;
+}
+
+#d_cmtpgn .btn_reprt .odd_span {
+    width: 27px;
+    height: 27px;
+    background-image: url("../../../assets/img/artistChanel/artist_chanel_bg_btn_cmt_140828.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    text-indent: -9999px;
+    vertical-align: middle;
+}
+
+/*---------------------------------------------*/
+/*　　　　　　　　　　　　댓글의 답글　　　　　　　　　　　　　*/
+/*---------------------------------------------*/
+/* 댓글의 답글 영역 */
+#d_cmtpgn .wrap_insert_cmt {
+    border-top: 1px dotted #d9d9d9;
+    background-color: #fafafa;
+}
+
+#d_cmtpgn .wrap_insert_cmt .wrap_bg_insert {
+    position: relative;
+    padding: 11px 16px 11px 90px;
+    background-image: url("../../../assets/img/artistChanel/artist_chaenl_bg_cmt_arrow.png");
+    background-repeat: no-repeat;
+    background-position: 72px 13px;
+}
+
+#d_cmtpgn .list_cmt .wrap_insert_cmt .wrap_bg_insert {
+    padding: 16px;
+    padding-left: 252px;
+    background-position: 235px 16px;
+    overflow: hidden;
+}
+
+/* 입력 영역 */
+#d_cmtpgn .wrap_insert_cmt div.wrap_all {
+    border: 1px solid #b6b6b6;
+    height: 24px;
+    background-color: #fff;
+}
+
+#d_cmtpgn .wrap_insert_cmt div.wrap_all.wide {
+    width: 650px;
+    margin-right: 3px;
+    float: left;
+}
+
+#d_cmtpgn .wrap_insert_cmt .wrap_input {
+    display: inline-block;
+    position: relative;
+}
+
+#d_cmtpgn input {
+    vertical-align: middle;
+}
+
+#d_cmtpgn input[type=text] {
+    height: 24px;
+    padding: 0 7px;
+    border: 1px solid #b6b6b6;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+    box-shadow: 1px 1px 0 0 rgba(0,0,0,0.05) inset;
+    font-size: 11px;
+    font-family: dotum,"돋움","Apple Gothic",sans-serif;
+}
+
+#d_cmtpgn .wrap_insert_cmt .wrap_input .input_text {
+    border: 0;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.05) inset;
+}
+
+/* 글자 제한 */
+#d_cmtpgn .wrap_insert_cmt .wrap_input .wrap_staus {
+    width: 88px;
+    float: left;
+    text-align: right;
+    margin-top: 2px;
+}
+
+#d_cmtpgn .wrap_insert_cmt .no_staus {
+    display: inline-block;
+    padding-left: 8px;
+    background-image: url("WebContent/assets/img/artistChanel/artist_chanel_bg_cmt_num_board.png");
+    background-repeat: no-repeat;
+    background-position: left 50%;
+    color: #999;
+    font-size: 11px;
+    line-height: 1.4em;
+}
+
+#d_cmtpgn .wrap_insert_cmt .no_staus .no {
+    color: #666;
+    font-weight: bold;
+}
+
+/* 입력 / 등록 버튼 */
+#d_cmtpgn .wrap_btn_r {
+    text-align: right;
+}
+
+#d_cmtpgn .list_cmt .wrap_insert_cmt .wrap_bg_insert div.wrap_btn_r {
+    margin-top: 0;
+    *margin-top: -2px;
+}
+
+/* 등록 버튼 */
+#d_cmtpgn .btn_base02 span.odd_span {
+    padding-left: 8px;
+    background-image: url("../../../assets/img/artistChanel/artistchanel_bg_btn_base.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#d_cmtpgn .btn_base02 span.even_span {
+    min-width: 22px;
+    height: 26px;
+    padding-right: 8px;
+    background-image: url("../../../assets/img/artistChanel/artistchanel_bg_btn_base.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    color: #666;
+    font-size: 11px;
+    line-height: 29px;
+    font-family: "Dotum","돋음","Apple Gothic",sans-serif;
+    letter-spacing: -1px;
+}
+
+#d_cmtpgn .wrap_insert_cmt .btn_base02 .even_span {
+    min-width: 64px;
+}
+
+/* ?? */
+#d_cmtpgn .list_cmt .search_wrong {
+    padding: 83px 0;
+    color: #1a1a1a;
+    font-size: 14px;
+    line-height: 1.4em;
+    font-family: "맑은 고딕","Malgun Gothic",arial,"돋움","dotum",sans-serif,"Apple Gothic",sans-serif;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.wrap_check_sys {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.wrap_check_sys div {
+    display: inline-block;
+    text-align: left;
+}
+
+.img_check_sys {
+    display: inline-block;
+    width: 178px;
+    height: 194px;
+    margin-right: 46px;
+    background-image: url("../../../assets/img/artistChanel/artist_chanel_img_check_sys.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.wrap_check_sys div {
+    display: inline-block;
+    text-align: left;
+}
+
+/*---------------------------------------------*/
+/*　　　　　　　　　　　　댓글 페이지　　　　　　　　　　　　　　*/
+/*---------------------------------------------*/
+#d_cmtpgn .paginate {
+    margin-top: 24px;
+    text-align: center;
+}
+
+#d_cmtpgn .paginate a {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-image: url("WebContent/assets/img/artistChanel/artist_chanel_btn_paginate.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+}
+
+#d_cmtpgn .paginate .btn_first.disabled {
+    background-position: 0 -108px;
+    margin-right: -2px;
+}
+
+#d_cmtpgn .paginate a span {
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+#d_cmtpgn .paginate .btn_pre.disabled {
+    background-position: -26px -108px;
+}
+
+#d_cmtpgn .paginate .page_num {
+    display: inline-block;
+    margin: 0 0 0 2px;
+    *margin: -1px 5px 0 1px;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-family: "돋움","dotum",sans-serif,"Apple Gothic",sans-serif;
+    vertical-align: middle;
+}
+
+#d_cmtpgn .paginate .page_num strong {
+    position: relative;
+    display: inline-block;
+    padding: 5px 6px 3px;
+    border: 1px solid #EDAE06;
+    background-color: #fff;
+    font-weight: bold;
+    min-width: 10px;
+    margin-left: -1px;
+    color: #80ba00;
+    vertical-align: middle;
+    text-decoration: none;
+    z-index: 2;
+}
+
+#d_cmtpgn .paginate .page_num a {
+    position: relative;
+    height: auto;
+    margin-left: -1px;
+    color: #666;
+    text-indent: 0;
+    background-image: url("WebContent/assets/img/artistChanel/artist_chanel_bg_paginate.png");
+    background-repeat: no-repeat;
+    background-position: 0 4px;
+    display: inline-block;
+    padding: 5px 7px 3px;
+    width: auto;
+    height: auto;
+    min-width: 18px;
+    font-weight: bold;
+}
+
+#d_cmtpgn .paginate .btn_next.disabled {
+    background-position: -84px -108px;
+}
+
+#d_cmtpgn .paginate .btn_last {
+    background-position: -110px 0;
+    margin-left: -2px;
+}
+
+/*---------------------------------------------*/
+/*　　　　　　　　　　　　댓글 검색　　　　　　　　　　　　　　*/
+/*---------------------------------------------*/
+#d_cmtpgn .wrap_search {
+    margin-top: 24px;
+    text-align: center;
+}
+
+/* 셀렉트박스 */
+#d_cmtpgn .select_wrap {
+    display: inline-block;
+    *display: inline;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    vertical-align: top;
+    *zoom: 1;
+}
+
+select {
+    min-width: 80px;
+    height: 26px;
+    *height: 17px;
+    padding: 2px 2px 2px 0;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 12px;
+    font-family: dotum,"돋움","Apple Gothic",sans-serif;
+    vertical-align: middle;
+}
+
+#d_cmtpgn select {
+    background-color: #fff;
+}
+
+#d_cmtpgn .select_wrap select {
+    min-width: 0;
+}
+
+#d_cmtpgn .select_type02 .select_box {
+    display: inline-block;
+    position: relative;
+    height: 26px;
+    padding-left: 9px;
+    background-image: url("../../../assets/img/artistChanel/artist_chanel_bg_selectbox.png");
+    background-repeat: no-repeat;
+    background-position: 0 -131px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#d_cmtpgn .select_type02 .select_box .sel_r {
+    overflow: hidden;
+    display: inline-block;
+    height: 21px;
+    padding: 5px 31px 0 0;
+    background-image: url("../../../assets/img/artistChanel/artist_chanel_bg_selectbox.png");
+    background-repeat: no-repeat;
+    background-position: right -131px;
+    color: #666;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#d_cmtpgn .select_type02 .select_open {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+#d_cmtpgn .select_type02 .select_open ul {
+    position: relative;
+    max-height: 208px;
+    border: 1px solid #999;
+    border-left-color: #888;
+    margin: 0;
+    padding: 4px 0;
+    background-color: #fff;
+    overflow-y: auto;
+    z-index: 5;
+}
+
+#d_cmtpgn .select_type02 .select_open li {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#d_cmtpgn .select_type02 .select_open li a {
+    color: #666;
+    display: block !important;
+    min-height: 23px;
+    margin: 0 !important;
+    padding: 3px 0 0 7px !important;
+}
+
+/* textarea */
+#d_cmtpgn textarea {
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 12px;
+    font-family: dotum,"돋움","Apple Gothic",sans-serif;
+    line-height: 1.6em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+

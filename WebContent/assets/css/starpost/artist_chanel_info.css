@@ -1,0 +1,179 @@
+@CHARSET "UTF-8";
+
+.section_atistinfo03 {
+    position: relative;
+}
+
+/* 타이틀 */
+h3.title {
+    padding-top: 33px;
+    padding-bottom: 12px;
+    color: #1a1a1a;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "맑은 고딕", "Malgun Gothic", "Apple Gothic", sans-serif;
+}
+
+h3.line {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+h3.arr {
+    padding-left: 11px;
+    background-image: url("../../../assets/img/artistChanel/artist_chanel_bul_title.png");
+    background-repeat: no-repeat;
+    background-position: 0 40px;
+}
+
+.wrap_insdc .atist_insdc {
+    width: 100%;
+    color: #1a1a1a;
+    font-size: 12px;
+    line-height: 20px;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+/* 활동정보 내용 */
+.section_atistinfo03 .list_define {
+    width: 1000px;
+    min-height: 100px;
+    margin-left: 10px;
+}
+
+.section_atistinfo03 .list_define dt {
+    float: left;
+    clear: both;
+    width: 112px;
+    line-height: 20px;
+}
+
+.section_atistinfo03 .list_define dd {
+    float: left;
+    width: 888px;
+    color: #1a1a1a;
+    line-height: 20px;
+}
+
+.section_atistinfo03 .list_define dd span.bar {
+    margin: 0 7px 0 3px;
+    color: #ccc;
+}
+
+.debutsong .debutsong_info .ellipsis {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* 그룹 정보 내용 */
+.section_atistinfo03 .wrap_gmem {
+    margin-bottom: -16px;
+    *margin-bottom: 0;
+}
+
+.list_atist13 {
+    margin-left: -16px;
+}
+
+.list_atist13 li {
+    float: left;
+    width: 240px;
+    margin: 0 0 0 16px;
+    padding: 16px 0 17px;
+}
+
+.section_atistinfo03 .wrap_gmem .list_atist13 li {
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.wrap_atist13 {
+    position: relative;
+}
+
+.wrap_atist13 .thumb {
+    display: block;
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    text-decoration: none;
+}
+
+.wrap_atist13 .thumb .thumb_frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96px;
+    height: 96px;
+    background-image: url("../../../assets/img/common/common_bg_album_frame.png");
+    background-repeat: no-repeat;
+    background-position: -683px 0;
+}
+
+.wrap_atist13 .atist_info {
+    height: 96px;
+    padding: 0 0 0 108px;
+}
+
+.wrap_atist13 .atist_info dt {
+    padding: 2px 0 0;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #1a1a1a;
+}
+
+.wrap_atist13 .atist_info dt .ellipsis {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.wrap_atist13 .atist_info dd.gubun {
+    margin-top: 6px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #1a1a1a;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.wrap_atist13 .atist_info dd.gnr {
+    margin-top: 3px;
+    padding: 0 18px 0 0;
+    font-size: 11px;
+    line-height: 13px;
+    color: #1a1a1a;
+}
+
+
+
+/* 신상정보 내용 */
+.section_atistinfo04 .list_define {
+    width: 752px;
+    margin-left: 10px;
+}
+
+.section_atistinfo04 .list_define dt {
+    float: left;
+    clear: both;
+    width: 112px;
+    line-height: 20px;
+}
+
+.section_atistinfo04 .list_define dd {
+    float: left;
+    width: 640px;
+    color: #1a1a1a;
+    line-height: 20px;
+}

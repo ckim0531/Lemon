@@ -1,0 +1,91 @@
+@CHARSET "UTF-8";
+
+
+
+	/* 레이아웃 */
+	#bg_contsSc{ 
+/*  		 border: 1px solid red;   */
+ 		text-align: center;
+ 		width: 100%; 
+ 	} 
+	
+ 	#wrap_con{ 
+/*  	  border: 1px solid blue;      */
+ 	 display: inline-block; 
+  	 width: 1008px;  
+ 	} 
+ 	
+ 	 #wrap_contsSc{ 
+ 	 	display: inline-block;
+/*  		 border: 1px solid green;   */
+ 		width: 80%; 
+ 		float: left;  		
+ 	 
+ 	} 
+ 	#contsSc { 
+/*   		border: 1px solid pink;   */
+ 		text-align: left;
+ 	} 
+ 	
+ 	#contsCh { 
+	 	display: inline-block;
+/*  		border: 1px solid gray;  */
+ 		width: 18%;
+ 		float: right;
+ 	}
+	/* 레이아웃 */
+	
+	
+	/* 메뉴 */ 	
+ 	#menuSc{
+ 		display: inline-block;
+ 		border-top: 2px solid #848484;
+ 		width: 100%;
+ 	}
+ 	
+ 	#menuSc div {
+ 	 	display: inline-block;
+ 	 	float: left;
+ 	 	width: 20%;
+ 	 	background-color: #ebf0ed;
+ 	 	border-bottom: 1px solid #dbdbdb;
+ 	 	padding-top: 10px;
+ 	 	padding-bottom: 10px;
+ 	}
+ 	
+ 	#menuSc div.current{
+ 		font-weight: bold;
+ 		color: #333333;
+ 		background-color: #fff;
+ 	 	border-bottom: 1px solid #fff; 		
+ 	}
+ 	
+ 	 #menuSc div a:hover{
+ 	 	text-decoration: underline;
+ 	}
+ 	/* 메뉴 */ 	
+ 	
+ 	
+ 	/* 탭메뉴 */
+ 	#tabSc .tcurrent{
+ 		text-decoration: underline;	
+ 	}
+ 	/* 탭메뉴 */
+ 	
+ 	 	
+ 	h3.titleSc{
+	    color: #1a1a1a;
+	    font-weight: bold;
+	    font-size: 18px;
+	    line-height: 24px;
+	    font-family: "맑은 고딕", "Malgun Gothic", "Apple Gothic", sans-serif;
+	    padding-top: 25px;
+ 	    padding-bottom: 12px;
+		border-bottom: 1px solid #ccc;
+  	}
+ 	
+ 	.wrap_list{
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
